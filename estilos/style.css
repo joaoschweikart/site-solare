@@ -4,14 +4,14 @@
 }
 
 body {
-    background-color: grey;
+    background-color: pink;
 }
 
 main {
     background-color: white;
-    width: 500px;
+    width: 1200px;
+    height: 1200px;
     margin: auto;
     box-shadow: 3px 3px 5px black;
-    height: 500px;
     padding: 10px;
 }
