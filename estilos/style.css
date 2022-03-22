@@ -1,0 +1,17 @@
+* {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+body {
+    background-color: grey;
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 5px black;
+    height: 500px;
+    padding: 10px;
+}
