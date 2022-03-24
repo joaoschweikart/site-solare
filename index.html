@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SITE - SOLARE</title>
+    <title>SOLARE</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header class="cabecalho">
         <a href="index.html"><img class="logo" src="/imagens-solare/solarelogo.png" alt="Logo Solare"></a>
         <nav class="cabecaho-menu">
-            <a class="cabecalho-item" href="index.html">Menu Principal</a>
+            <a class="cabecalho-item" href="categorias.html">Categorias</a>
             <a class="cabecalho-item" href="catalogo.html">Catálogo</a>
-            <a class="cabecalho-item" href="oferta.html">Oferta do dia</a>
+            <a class="cabecalho-item" href="oferta.html">Ofertas</a>
             <a class="cabecalho-item" href="contato.html">Entre em contato</a>
             <a class="cabecalho-item" href="login.html">Login</a>
         </nav>
+        <a class="carrinho" href="carrinho.html"><img src="/imagens-solare/carrinho.png" alt=""></a>
     </header>
     <main class="conteudo">
         <section class="conteudo-1">
-            <div class="conteudo-escrito">
-            <h2 class="conteudo-titulo">SOLARE ACESSÓRIOS</h2>
-            <h2 class="conteudo-subtitulo">Conheça nosso catálogo clicando abaixo:</h2>
-            <a href="catalogo.html"><input type="button" class="botao" value="Catálogo"></a>
+            <div class="navegacao">
+                <label for="slide1" class="barras" tabindex="1" style="background-color: white;"></label>
+                <label for="slide2" class="barras" tabindex="2"></label>
+                <label for="slide3" class="barras" tabindex="3"></label>
+                <label for="slide4" class="barras" tabindex="4"></label>
             </div>
-            <picture>
-                <img class ="conteudo-imagem" src="/imagens-acessorios/Capturar.JPG" alt="Acessório nova coleção">
-            </picture>
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked> 
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <div class="slide s1">
+                    <img src="/imagens-acessorios/Capturar.JPG" alt="Pulseira 1">
+                </div>
+                <div class="slide">
+                    <img src="/imagens-acessorios/Capturar1.JPG" alt="Pulseira 2">
+                </div>
+                <div class="slide">
+                    <img src="/imagens-acessorios/Capturar2.JPG" alt="Pulseira 3">
+                </div>
+                <div class="slide">
+                    <img src="/imagens-acessorios/Capturar3.JPG" alt="Pulseira 4">
+                </div>
+            </div>
         </section>
         <section class="conteudo-2">
-            <h2 class="conteudo-titulo">OFERTAS DO DIA &darr;</h2>
+            <h2 class="2-titulo">Na Solare também tem &darr;</h2>
+            <div class="categorias">
+                <a href=""><img src="/imagens-acessorios/Capturar.JPG" alt="Pulseira 1" id="categoria1"></a>
+                <a href=""><img src="/imagens-acessorios/Capturar1.JPG" alt="Pulseira 2" id="categoria2"></a>
+                <a href=""><img src="/imagens-acessorios/Capturar2.JPG" alt="Pulseira 3" id="categoria3"></a>
+                <a href=""><img src="/imagens-acessorios/Capturar3.JPG" alt="Pulseira 4" id="categoria4"></a>
+            </div>
+            <div class="navegacao-2">
+                <a href="">Itens de inverno</a>
+                <a href="">Linha Pet</a>
+                <a href="">Phone Strap</a>
+                <a href="">Nova coleção</a>
+            </div>
         </section>
     </main>
     <footer class="rodape">

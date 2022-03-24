@@ -10,12 +10,14 @@
 body {
     font-size: 100%;
     background: linear-gradient(45deg, #0f5a5e 0%, #1c92f3 46%, #0b5592 100%);
-
-
 }
 
 .logo {
-    height: 60px;
+    height: 50px;
+}
+
+.carrinho {
+    height: 32px;
 }
 
 .cabecalho {
@@ -45,56 +47,107 @@ body {
 }
 
 .conteudo-1 {
+    height: 500px;
+    width: 410px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20pt;
+}
+
+.navegacao {
+    position: relative;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 24px;
-    border-bottom: 5px solid white;
-    text-align: center;
 }
 
-.conteudo-escrito {
+.barras {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.barras:focus {
+    background-color: white;
+}
+
+input {
+    display: none;
+}
+
+.slides {
     display: flex;
-    flex-direction: column;
-    gap: 32px;
+    flex-direction: row;
+    width: 400%;
+    height: 100%;
 }
 
-.conteudo-titulo {
-    font-size: 40pt;
+.slide {
+    width: 25%;
+    transition: 0.5s;
 }
 
-.conteudo-subtitulo {
-    font-size: 20pt;
+.slide img {
+    width: 100%;
+    height: 100%;
 }
 
-.botao {
-    margin-top: 10px;
-    width: 150px;
-    height: 40px;
-    border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    font-size: 13pt;
-    border-radius: 20px;
-    font-family: Sarala, sans-serif;
-    color: black;
+#slide1:checked ~ .s1 {
+    margin-left: 0;
 }
 
-.botao:hover {
-    color: #2c6ca8;
+#slide2:checked ~ .s1 {
+    margin-left: -25%;
 }
 
-.conteudo-imagem {
-    width: 340px;
+#slide3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -75%;
 }
 
 .conteudo-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 24px;
     text-align: center;
+    border-top: 1px solid white;
+    margin-top: 25px;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.categorias img {
+    width: 120px;
+    height: 120px;
+    margin: 20px 50px 0px 50px;
+    border-radius: 30px;
+}
+
+.navegacao-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navegacao-2 a {
+    margin: 10px 68px 0px 68px;
+    text-decoration: none;
+    color: white;
 }
 
 footer {
