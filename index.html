@@ -18,41 +18,49 @@
         </nav>
         <a class="carrinho" href="carrinho.html"><img src="/imagens-solare/carrinho.png" alt=""></a>
     </header>
-    <main class="conteudo">
-        <section class="conteudo-1">
-            <div class="navegacao">
-                <label for="slide1" class="barras" tabindex="1" style="background-color: white;"></label>
-                <label for="slide2" class="barras" tabindex="2"></label>
-                <label for="slide3" class="barras" tabindex="3"></label>
-                <label for="slide4" class="barras" tabindex="4"></label>
-            </div>
+    <!--MAIN QUE ABRANGE TODOS OS CONTEÚDOS DO SITE-->
+    <main class="conteudos">
+        <!--SEÇÃO QUE ABRANGE APENAS O 1º CONTEÚDO DO SITE (SLIDER)-->
+        <section class="slider">
+            <!--DIV QUE ENGLOBA A CONSTRUÇÃO COMPLETA DOS SLIDES-->
             <div class="slides">
+                <!--INPUTS QUE SELECIONAM CADA IMAGEM-->
                 <input type="radio" name="slide" id="slide1" checked> 
                 <input type="radio" name="slide" id="slide2">
                 <input type="radio" name="slide" id="slide3">
                 <input type="radio" name="slide" id="slide4">
-                <div class="slide s1">
-                    <img src="/imagens-acessorios/Capturar.JPG" alt="Pulseira 1">
+                <!--IMAGENS DO CARROSSEL-->
+                <img class="slide s1" src="/imagens-acessorios/Capturar.JPG" alt="Pulseira 1">           
+                <img class ="slide" src="/imagens-acessorios/Capturar1.JPG" alt="Pulseira 2">
+                <img class ="slide" src="/imagens-acessorios/Capturar2.JPG" alt="Pulseira 3">
+                <img class ="slide" src="/imagens-acessorios/Capturar3.JPG" alt="Pulseira 4">
+                <!--BACKGROUNDS DOS LABELS QUANDO SELECIONADOS-->
+                <div class="backgrounds">
+                    <div class="background1"></div>
+                    <div class="background2"></div>
+                    <div class="background3"></div>
+                    <div class="background4"></div>
                 </div>
-                <div class="slide">
-                    <img src="/imagens-acessorios/Capturar1.JPG" alt="Pulseira 2">
-                </div>
-                <div class="slide">
-                    <img src="/imagens-acessorios/Capturar2.JPG" alt="Pulseira 3">
-                </div>
-                <div class="slide">
-                    <img src="/imagens-acessorios/Capturar3.JPG" alt="Pulseira 4">
+                <!--BOTÕES LABEL QUE SE REFEREM AOS INPUTS ESCONDIDOS-->
+                <div class="navegacao">
+                    <label for="slide1" class="barras"></label>
+                    <label for="slide2" class="barras"></label>
+                    <label for="slide3" class="barras"></label>
+                    <label for="slide4" class="barras"></label>
                 </div>
             </div>
         </section>
+        <!--SEÇÃO QUE ABRANGE APENAS O 2º CONTEUDO DO SITE-->
         <section class="conteudo-2">
             <h2 class="2-titulo">Na Solare também tem &darr;</h2>
+            <!--DIV QUE ABRANGE AS CATEGORIAS DE PRODUTOS-->
             <div class="categorias">
                 <a href=""><img src="/imagens-acessorios/Capturar.JPG" alt="Pulseira 1" id="categoria1"></a>
                 <a href=""><img src="/imagens-acessorios/Capturar1.JPG" alt="Pulseira 2" id="categoria2"></a>
                 <a href=""><img src="/imagens-acessorios/Capturar2.JPG" alt="Pulseira 3" id="categoria3"></a>
                 <a href=""><img src="/imagens-acessorios/Capturar3.JPG" alt="Pulseira 4" id="categoria4"></a>
             </div>
+            <!--DIV QUE ABRANGE OS NOMES DAS CATEGORIAS DE PRODUTOS-->
             <div class="navegacao-2">
                 <a href="">Itens de inverno</a>
                 <a href="">Linha Pet</a>
@@ -65,5 +73,6 @@
         <p>Copyright &copy; 2022 - by João Vitor Schweikart</p>
         <p><a href="https://www.instagram.com/joaoschweikart/" target="_blank">@joaoschweikart</a> | <a href="mailto:joaobernardonschweikart@gmail.com?subjecttext">joaobernardonschweikart@gmail.com</a><p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
