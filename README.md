@@ -1,3 +1,3 @@
-# Site Solare Acessori
+# Site Solare Acessórios
 
-Projeto de construção do site da loja da minha namorada em HTML/CSS/JS e tratamento de dados em PHP/MySQL.
+Projeto de construção do site da loja Solare em HTML/CSS/JS e tratamento de dados em PHP/MySQL.
